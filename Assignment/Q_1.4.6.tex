@@ -226,37 +226,39 @@ which is intersection point of the perpendicular bisectors of AB and AC.
 \begin{enumerate}
 	\item To find  the value of $\angle{BOC}$ :
 \begin{align}
-\Vec{OB}=\Vec{B}-\Vec{O}\\
-          =\myvec{\frac{5}{12}\\\\\frac{67}{12}}
+\Vec{B}-\Vec{O}
+          &=\myvec{\frac{5}{12}\\\\\frac{67}{12}}
 \end{align}
 \vspace{0.1cm}
 \begin{align}
-\Vec{OC}=\Vec{C}-\Vec{O}\\
-          =\myvec{\frac{17}{12}\\\\\frac{-65}{12}}
+\Vec{C}-\Vec{O}
+          &=\myvec{\frac{17}{12}\\\\\frac{-65}{12}}
 \end{align}
 \vspace{0.1cm}
-calculating the norm of $\Vec{OB}$ and $\Vec{OC}$,we get:
+calculating the norm of $\Vec{\Vec{B}-\Vec{O}}$ and $\Vec{\Vec{C}-\Vec{O}}$,we get:
 \begin{align}
-	\norm{OB}= \frac{\sqrt{4514}}{12}\\
-	\norm{OC}= \frac{\sqrt{4514}}{12}
+	\norm{\Vec{B}-\Vec{O}}&= \frac{\sqrt{4514}}{12}\\
+	\norm{\Vec{C}-\Vec{O}}&= \frac{\sqrt{4514}}{12}
 \end{align}
 \vspace{0.2cm}
 by doing matrix multiplication, we get:
 \begin{align}
-\Vec{OB}\cdot\Vec{OC}=(\Vec{OB})(\Vec{OC})^\intercal\\
-=\frac{-4270}{144}
+\brak{\Vec{B}-\Vec{O}}\cdot\brak{\Vec{C}-\Vec{O}}&=\brak{\Vec{B}-\Vec{O}}\brak{\Vec{C}-\Vec{O}}^{\top}
+\end{align}
+\begin{align}
+&=\frac{-4270}{144}
 \end{align}
 \vspace{0.2cm}
 to calcuate the $\angle{BOC}$:
 \begin{align}
-	\cos{O}=\frac{\Vec{OB}\cdot\Vec{OC}}{\norm{OB}\norm{OC}}\\
-=\frac{\frac{-4270}{144}}{\frac{\sqrt{4514}}{12}\times\frac{\sqrt{4514}}{12}}\\
-=\frac{-4270}{4514}
+\cos{O}&=\frac{\brak{\Vec{B}-\Vec{O}}\cdot\brak{\Vec{C}-\Vec{O}}}{\norm{\Vec{B}-\Vec{O}}\norm{\Vec{C}-\Vec{O}}}\\
+&=\frac{\frac{-4270}{144}}{\frac{\sqrt{4514}}{12}\times\frac{\sqrt{4514}}{12}}\\
+&=\frac{-4270}{4514}
 \end{align}
 \vspace{0.1cm}
 \begin{align}
-\Rightarrow\angle{O}=\cos^{-1}\left(\frac{-4270}{4514}\right)\\
-\Rightarrow\angle{O}=\angle{BOC}=161.075355593
+&\implies\angle{O}=\cos^{-1}\brak{\frac{-4270}{4514}}\\
+&\implies\angle{O}=\angle{BOC}=161.075355593
 \end{align}
 \vspace{0.4cm}
 Therefore $\angle{BOC}=161.075355593$.
@@ -269,42 +271,43 @@ Therefore $\angle{BOC}=161.075355593$.
 
 	\item To find  the value of $\angle{BAC}$ :
 \begin{align}
-\Vec{AB}=\Vec{B}-\Vec{A}\\
-          =\myvec{-5\\7}
+\Vec{B}-\Vec{A}
+         & =\myvec{-5\\7}
 \end{align}
 \vspace{0.1cm}
 \begin{align}
-\Vec{AC}=\Vec{C}-\Vec{A}\\
-          =\myvec{-4\\-4}
+\Vec{C}-\Vec{A}
+          &=\myvec{-4\\-4}
 \end{align}
 \vspace{0.1cm}
-calculating the norm of $\Vec{AB}$ and $\Vec{AC}$,we get:
+calculating the norm of $\Vec{\Vec{B}-\Vec{A}}$ and $\Vec{\Vec{C}-\Vec{A}}$,we get:
 \begin{align}
-	\norm{AB}= \sqrt{74}
-	\norm{AC}= 4\sqrt{2}
+	\norm{\Vec{B}-\Vec{A}}&= \sqrt{74}\\
+	\norm{\Vec{C}-\Vec{A}}&= 4\sqrt{2}
 \end{align}
 \vspace{0.2cm}
 by doing matrix multiplication, we get:
 \begin{align}
-\Vec{AB}\cdot\Vec{AC}=(\Vec{AB})(\Vec{AC})^\intercal\\
-= -8
+\brak{\Vec{B}-\Vec{A}}\cdot\brak{\Vec{C}-\Vec{A}}&=\brak{\Vec{B}-\Vec{A}}\brak{\Vec{C}-\Vec{A}}^{\top}\end{align}
+\begin{align}
+&=-8
 \end{align}
 \vspace{0.2cm}
 to calcuate the $\angle{BAC}$:
 \begin{align}
-	\cos{A}=\frac{\Vec{AB}\cdot\Vec{AC}}{\norm{AB}\norm{AC}}\\
-=\frac{-8}{\sqrt{74}\times4\sqrt{2}}\\
-=\frac{-8}{4\sqrt{148}}
+	\cos{A}&=\frac{\brak{\Vec{B}-\Vec{A}}\cdot\brak{\Vec{C}-\Vec{A}}}{\norm{\Vec{B}-\Vec{A}}\norm{\Vec{C}-\Vec{A}}}\\
+&=\frac{-8}{\sqrt{74}\times4\sqrt{2}}\\
+&=\frac{-8}{4\sqrt{148}}
 \end{align}
 \vspace{0.1cm}
 \begin{align}
-\Rightarrow\angle{A}=\cos^{-1}\left(\frac{-8}{4\sqrt{148}}\right)\\
-\Rightarrow\angle{A}=\angle{BAC}=99.4623222077
+&\implies\angle{A}=\cos^{-1}\brak{\frac{-8}{4\sqrt{148}}}\\
+&\implies\angle{A}=\angle{BAC}=99.4623222077
 \end{align}
 \vspace{0.4cm}
 Therefore $\angle{BAC}=99.4623222077$.\\
 \vspace{0.5cm}
-\textbf{As we can see,\\ $\angle{BOC}\neq2\times\angle{BAC}$\\Therefore given statement is wrong.}
+As we can see,\\ $\angle{BOC}\neq2\times\angle{BAC}$\\Therefore given statement is wrong.
 \end{enumerate}
 
 \end{document}

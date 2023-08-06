@@ -18,6 +18,7 @@ dot_pt_A = (B - A) @ ((C - A).T)
 norm_pt_A = np.linalg.norm(B - A) * np.linalg.norm(C - A)
 cos_theta_A = dot_pt_A / norm_pt_A
 angle_BAC = np.degrees(np.arccos(cos_theta_A))
+#To check whether the answer is correct or not
 print("angle BAC = " + str(angle_BAC))
 if angle_BOC == 2 * angle_BAC:
   print("\nangle BOC = 2 times angle BAC\nHence the give statement is correct")
